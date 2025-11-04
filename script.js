@@ -122,3 +122,19 @@ FUNCTION playGame()
     
 */
 
+function playGame() {
+
+    
+
+    for (i = 1; i <= 5; i++) {
+        playRound(humanSelection, computerSelection)
+    }
+
+    if (humanScore == computerScore) {
+        console.log("It's... a draw")
+    } else if (humanScore > computerScore) {
+        console.log("Yayyyy, You Win!")
+    }  else {
+        console.log("You Lose, Boooooooo!")
+    } 
+}
