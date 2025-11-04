@@ -38,3 +38,15 @@ function getComputerChoice() {
 }
 
 console.log(getComputerChoice())
+
+//Pseudo-code
+/*
+FUNCTION getHumanChoice
+    DISPLAY "Enter your choice(rock, paper, or scissors)"
+    SET userInput TO GET input
+    RETURN userInput
+END FUNCTION
+
+DISPLAY getHumanChoice()
+
+*/
