@@ -13,7 +13,8 @@ FUNCTION getComputerChoice
     END CASE
 END FUNCTION
 */
-
+var humanScore = 0;
+var computerScore = 0;
 
 function getComputerChoice() {
     var randomNumber = Math.floor(Math.random() * 3) +  1
