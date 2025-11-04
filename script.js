@@ -1,6 +1,6 @@
 console.log('Hello World')//Test to make sure script is connected to index.html properly
 
-//Pseudo-code
+//Pseudo-code for getComputerChoice
 /*
 FUNCTION getComputerChoice
     SET randomNumber TO random Integer between 1 and 3
@@ -22,15 +22,12 @@ function getComputerChoice() {
     switch (randomNumber) {
         case 1: 
             return 'rock';
-            break;
 
         case 2:
             return 'paper';
-            break;
 
         case 3:
             return 'scissors';
-            break;
     
         default:
             console.log("Error in number generation");
@@ -41,7 +38,7 @@ function getComputerChoice() {
 
 console.log(getComputerChoice())
 
-//Pseudo-code
+//Pseudo-code for getHumanChoice
 /*
 FUNCTION getHumanChoice
     DISPLAY "Enter your choice(rock, paper, or scissors)"
@@ -59,3 +56,5 @@ function getHumanChoice() {
 }
 
 console.log(getHumanChoice())
+
+//Pseudo-code for playRound
