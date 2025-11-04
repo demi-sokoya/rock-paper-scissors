@@ -61,7 +61,7 @@ FUNCTION playGame()
         playRound(humanSelection, computerSelection)
     END FOR
 
-    IF humanscore = computerScore THEN
+    IF humanScore = computerScore THEN
         DISPLAY "It's... a draw?"
     ELSE IF humanScore > computerScore THEN
         DISPLAY "You Win yayyyyyyyyyy!"
