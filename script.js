@@ -14,7 +14,6 @@ FUNCTION getComputerChoice
 END FUNCTION
 */
 
-
 function getComputerChoice() {
   var randomNumber = Math.floor(Math.random() * 3) + 1;
 
@@ -54,8 +53,6 @@ function getHumanChoice() {
 }
 
 //console.log(getHumanChoice())
-
-
 
 //Pseudo-code for playGame
 /*
@@ -99,8 +96,8 @@ SET computerSelection TO getComputerChoice()
 CALL playRound(humanSelection, computerSelection)
     
  */
-    let humanScore = 0;
-    let computerScore = 0;
+  let humanScore = 0;
+  let computerScore = 0;
 
   function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
@@ -120,14 +117,11 @@ CALL playRound(humanSelection, computerSelection)
     }
   }
 
-    
-
   for (let i = 1; i <= 5; i++) {
-    alert("Round " + i + ", Fight!")
+    alert("Round " + i + ", Fight!");
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
-    
   }
 
   if (humanScore == computerScore) {
@@ -139,4 +133,4 @@ CALL playRound(humanSelection, computerSelection)
   }
 }
 
-playGame()
+playGame();
