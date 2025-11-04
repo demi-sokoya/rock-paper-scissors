@@ -122,8 +122,8 @@ CALL playRound(humanSelection, computerSelection)
 
     
 
-  for (i = 1; i <= 5; i++) {
-    alert("Round " + [i] + ", Fight!")
+  for (let i = 1; i <= 5; i++) {
+    alert("Round " + i + ", Fight!")
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
