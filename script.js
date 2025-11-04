@@ -58,3 +58,26 @@ function getHumanChoice() {
 console.log(getHumanChoice())
 
 //Pseudo-code for playRound
+/*
+FUNCTION playRound(humanChoice, computerChoice) 
+    SET humanChoice TO LOWERCASE(humanChoice)
+
+    IF humanChoice EQUALS computerChoice THEN
+        DISPLAY "it's a tie"
+    ELSE IF (humanChoice EQUALS 'paper' AND computerChoice EQUALS 'rock') OR (humanChoice EQUALS 'rock' AND computerChoice EQUALS 'scissors') OR (humanChoice EQUALS 'scissors' AND computerChoice EQUALS 'paper') THEN
+        DISPLAY "You win"
+        SET humanScore TO humanScore + 1
+    ELSE 
+        DISPLAY "Aww You lost"
+        SET computerScore TO computerScore + 1
+    ENDIF
+END FUNCTION
+
+
+
+SET humanSelection TO getHumanChoice()
+SET computerSelection TO getComputerChoice()
+
+CALL playRound(humanSelection, computerSelection)
+    
+ */
