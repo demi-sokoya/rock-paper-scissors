@@ -1,4 +1,4 @@
-console.log('Hello World')//Test to make sure script is connected to index.html properly
+//console.log('Hello World')//Test to make sure script is connected to index.html properly
 
 //Pseudo-code for getComputerChoice
 /*
@@ -13,8 +13,8 @@ FUNCTION getComputerChoice
     END CASE
 END FUNCTION
 */
-var humanScore = 0;
-var computerScore = 0;
+let humanScore = 0;
+let computerScore = 0;
 
 function getComputerChoice() {
     var randomNumber = Math.floor(Math.random() * 3) +  1
@@ -36,7 +36,7 @@ function getComputerChoice() {
 
 }
 
-console.log(getComputerChoice())
+//console.log(getComputerChoice())
 
 //Pseudo-code for getHumanChoice
 /*
@@ -55,7 +55,7 @@ function getHumanChoice() {
     return userInput;
 }
 
-console.log(getHumanChoice())
+//console.log(getHumanChoice())
 
 //Pseudo-code for playRound
 /*
@@ -81,3 +81,26 @@ SET computerSelection TO getComputerChoice()
 CALL playRound(humanSelection, computerSelection)
     
  */
+
+function playRound(humanChoice, computerChoice) {
+    humanChoice = humanChoice.toLowerCase()
+
+    if (humanChoice === computerChoice) {
+        console.log("Ooooh, a tie")
+    } else if (
+        (humanChoice === "paper" && computerChoice === "rock") || 
+        (humanChoice === "rock" && computerChoice === "scissors") || 
+        (humanChoice === "scissors" && computerChoice === "paper")
+    ) {
+        console.log("Yipee, You Win!")
+        humanScore += 1
+    } else {
+        console.log("Shucks, You Lost :( ")
+        computerScore += 1
+    }
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
