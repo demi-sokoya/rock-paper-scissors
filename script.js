@@ -104,3 +104,21 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
+
+//Pseudo-code for playGame
+/*
+FUNCTION playGame()
+    FOR i EQUALS 1, i <= 5, i++
+        playRound(humanSelection, computerSelection)
+    END FOR
+
+    IF humanscore = computerScore THEN
+        DISPLAY "It's... a draw?"
+    ELSE IF humanScore > computerScore THEN
+        DISPLAY "You Win yayyyyyyyyyy!"
+    ELSE 
+        DISPLAY "You lose Boooooooo!"
+
+    
+*/
+
