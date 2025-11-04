@@ -14,6 +14,7 @@ FUNCTION getComputerChoice
 END FUNCTION
 */
 
+
 function getComputerChoice() {
     var randomNumber = Math.floor(Math.random() * 3) +  1
 
@@ -50,3 +51,10 @@ END FUNCTION
 DISPLAY getHumanChoice()
 
 */
+
+function getHumanChoice() {
+    var userInput = prompt("Rock, Paper, or Scissors?")
+    return userInput;
+}
+
+console.log(getHumanChoice())
