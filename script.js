@@ -15,7 +15,7 @@ END FUNCTION
 */
 
 function getComputerChoice() {
-  var randomNumber = Math.floor(Math.random() * 3) + 1;
+  let randomNumber = Math.floor(Math.random() * 3) + 1;
 
   switch (randomNumber) {
     case 1:
@@ -48,7 +48,7 @@ DISPLAY getHumanChoice()
 */
 
 function getHumanChoice() {
-  var userInput = prompt("Rock, Paper, or Scissors?");
+  let userInput = prompt("Rock, Paper, or Scissors?");
   return userInput;
 }
 
